@@ -108,6 +108,8 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="burn_warn_subVI.vi" Type="VI" URL="../burn_warn_subVI.vi"/>
+		<Item Name="LED_ctrl_subVI.vi" Type="VI" URL="../LED_ctrl_subVI.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="stop_botton.ctl" Type="VI" URL="../stop_botton.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
