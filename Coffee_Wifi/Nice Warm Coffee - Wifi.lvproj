@@ -145,6 +145,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="hot_plate_control_subVI.vi" Type="VI" URL="../../LabView/hot_plate_control_subVI.vi"/>
 		<Item Name="IR_cam_subVI.vi" Type="VI" URL="../IR_cam_subVI.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Set_Time_1.vi" Type="VI" URL="../Set_Time_1.vi"/>
