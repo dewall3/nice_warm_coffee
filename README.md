@@ -11,7 +11,7 @@ State machine diagram.
 ## Sensors and Actors
 
 ### I2C Grid-Eye IR Camera
-Used to measure the temperature of the coffee. The IR temperature sensor will only read the surface temperature, which tends to be lower due to the interface with the air. To account for this, we looked at temperature from the IR thermometer vs temperature from a submerged thermometer and applied a correction factor to compensate.
+Used to measure the temperature of the coffee. 
 
 ### I2C PMOD TMP3
 The TMP3 sensor is used to measure temperature within the hot plate to give an estimate of the danger level of touching the hot plate.
