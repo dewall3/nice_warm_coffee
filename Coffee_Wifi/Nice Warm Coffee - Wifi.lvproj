@@ -68,7 +68,7 @@
 	</Item>
 	<Item Name="Team17-MyRio" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">Team17-MyRio</Property>
-		<Property Name="alias.value" Type="Str">192.168.94.68</Property>
+		<Property Name="alias.value" Type="Str">192.168.115.68</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -145,10 +145,11 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="hot_plate_control_subVI.vi" Type="VI" URL="../../LabView/hot_plate_control_subVI.vi"/>
+		<Item Name="hot_plate_control_subVI.vi" Type="VI" URL="../hot_plate_control_subVI.vi"/>
 		<Item Name="IR_cam_subVI.vi" Type="VI" URL="../IR_cam_subVI.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Set_Time_1.vi" Type="VI" URL="../Set_Time_1.vi"/>
+		<Item Name="tag_open_subvi.vi" Type="VI" URL="../tag_open_subvi.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Calculate Clock Settings.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Calculate Clock Settings.vi"/>
