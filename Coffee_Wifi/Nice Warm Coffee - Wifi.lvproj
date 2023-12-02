@@ -147,9 +147,12 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="hot_plate_control_subVI.vi" Type="VI" URL="../hot_plate_control_subVI.vi"/>
 		<Item Name="IR_cam_subVI.vi" Type="VI" URL="../IR_cam_subVI.vi"/>
+		<Item Name="load_cell_read_subvi.vi" Type="VI" URL="../load_cell_read_subvi.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="read_tags_subvi.vi" Type="VI" URL="../read_tags_subvi.vi"/>
 		<Item Name="Set_Time_1.vi" Type="VI" URL="../Set_Time_1.vi"/>
 		<Item Name="tag_open_subvi.vi" Type="VI" URL="../tag_open_subvi.vi"/>
+		<Item Name="write_tags_subvi.vi" Type="VI" URL="../write_tags_subvi.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Calculate Clock Settings.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Calculate Clock Settings.vi"/>
