@@ -2,6 +2,8 @@
 
 Coffee warmers have been around for quite some time. They are available at a relatively low cost from many of your favorite retailers. They are simple and tend to do their job quite well. Have you ever looked at them and thought: "These should be far far more expensive, complex, and bulky!"? If so, we have the product for you! Meet the brainchild of the Georgia Tech Mechatronics Team 17, Nice Warm Coffee! All you need is an expensive MyRio, a set of sensors, a warming plate, and a giant box to put everything in.
 
+The main motivation behind this project is to provide a solution to a real-world problem that many people face every day - cold coffee. Our device will maintain a set temperature, detect the presence of a coffee cup, and warn the user about how hot the surface is at varying levels. Every device these days is smart - so why not your coffee warmer? The Nice Warm Coffee device can be completely monitored and controlled from your smartphone! Why? Why not?
+
 ## Requirements
 
 ![Team17_Eng_spec](https://github.com/dewall3/nice_warm_coffee/assets/62768921/eb5764a0-cf84-4110-a8b5-f3e962a87931)
@@ -48,10 +50,15 @@ Model: ‎ED_YW05_RGB-4P-C
 ## Wireless Communication
 
 ### WiFi MyRio Setup
+The MyRio can be configured to connect over WiFi utilizing the NI MAX software. The MyRio must be configured in advance to connect to a specific network that the host computer will also be connected to. For simplicity, a custom hotspot SSID/password was made to enable the device to be started anywhere without reconfiguration.
+
+NOTE: To connect to the webservices detailed below, the MyRio date and time must be accurate. The date/time reset every time the device loses power. To combat this, a SubVI can be used to set the time of the MyRio to match the host computer. One such SubVI was available through NI: <a href="https://learn-cf.ni.com/teach/riodevguide/code/rt-pc_set-rt-system-time-date-from-pc.html">Set Date and Time on MYRIO</a>
 
 ### SystemLink
+The "NI SystemLink Server" package can be downloaded from the NI Package Manager using the GaTech license. This package is required to run the VI and is what enables the LabView program and MyRio to communicate with the WebVI using tags: <a href="https://www.ni.com/docs/en-US/bundle/systemlink/page/communicating-data-with-tags.html">NI Documentation on Using Tags</a>
 
 ### GWeb Services
+HTML development resource (available through GaTech's NI license) that provides the means for creating WebVIs, which have a similar front panel and back panel setup similar to LabView. The "front panel" can be hosted on a website, such as ours: <a href="https://hosting.systemlinkcloud.io/webapps/05c91db7-e59d-4886-8364-4b6e4c14867b/content/ni-paths-NISHAREDDIR64/Web%20Server/htdocs/WebApp/index.html">WebVI</a>
 
 ## Demonstration
 
