@@ -60,14 +60,21 @@ The "NI SystemLink Server" package can be downloaded from the NI Package Manager
 ### GWeb Services
 HTML development resource (available through GaTech's NI license) that provides the means for creating WebVIs, which have a similar front panel and back panel setup similar to LabView. The "front panel" can be hosted on a website, such as ours: <a href="https://hosting.systemlinkcloud.io/webapps/05c91db7-e59d-4886-8364-4b6e4c14867b/content/ni-paths-NISHAREDDIR64/Web%20Server/htdocs/WebApp/index.html">WebVI</a>
 
+The "Diagram" on GWeb Services operates in a very similar manner to a LabView back panel:
+![GWeb_back_panel](https://github.com/dewall3/nice_warm_coffee/assets/62768921/04bde37c-8479-4146-9bbf-c6c1945b048c)
+
+
 ## Demonstration
 
 <a href="https://gtvault-my.sharepoint.com/:v:/g/personal/dwallace36_gatech_edu/EbN4DnTYsqlCpFK7Ce8ax5EBOd8VOqywoSlm-DWYyA8vqQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=r7S1AI">Demonstration Video</a>
 
-## Challenges Encountered
+## Challenges and Lessons Learned
 
-Discuss challenges
+One of the biggest challenges encountered was heat generation. When most of the budget goes to expensive sensors and a MyRio, sometimes corners have to be cut. In this case, the heat element was a very inexpensive 17W "Candle Warmer". This proved to be quite ineffective at warming up the coffee. It does a decent job at maintaining a temperature, but raising the temperature takes an absurd amount of time. In the demonstration video above, the temperature goes from approximately 95° F to 105° F. The video's speed is increased significantly. The original recording was over an hour long! Because of this, the warmer only does anything useful at 100% power, so one of the original "optional" goals in the requirements above had to be abandoned. There was simply no feasible way to create a smart feedback adjustment with this particular heat source.
 
-## Wrap-Up
+Another optional goal that had to be abandoned was the self-deployment of the MyRio. Combining deployment with the WiFi and WebVI interface ended up being a bit beyond the scope of our capabilities. 
 
-Conclusion
+Finally, we noticed that the IR camera had temperature readings that sometimes seemed off. Since the sensor is measuring the surface temperature (at the interface between liquid and air), the direct measurement is likely not a good representation of mean liquid temperature. There was not time to address this, but a future upgrade could include a temperature correction of some kind determined by comparing IR surface temperature data to temperature data collected by a submerged sensor.
+
+Despite these minor setbacks, we feel that our device was able to perform admirably. The web-based control aspect also worked far better than we could have hoped. We learned how to successfully build and deploy an HTML package, transmit data back and forth in LabView through a webserver, and set up the MyRio for wireless operation. 
+
