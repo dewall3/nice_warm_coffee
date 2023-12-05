@@ -26,7 +26,7 @@
 			</Item>
 			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../documentation/myRIO Project Documentation.html"/>
 		</Item>
-		<Item Name="Set_Time_2.vi" Type="VI" URL="../Set_Time_2.vi"/>
+		<Item Name="Set_Time_1.vi" Type="VI" URL="../Set_Time_1.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -150,7 +150,7 @@ AddOutputFilter chunkFilter
 		<Item Name="load_cell_read_subvi.vi" Type="VI" URL="../load_cell_read_subvi.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="read_tags_subvi.vi" Type="VI" URL="../read_tags_subvi.vi"/>
-		<Item Name="Set_Time_1.vi" Type="VI" URL="../Set_Time_1.vi"/>
+		<Item Name="Set_Time_2.vi" Type="VI" URL="../Set_Time_2.vi"/>
 		<Item Name="tag_open_subvi.vi" Type="VI" URL="../tag_open_subvi.vi"/>
 		<Item Name="write_tags_subvi.vi" Type="VI" URL="../write_tags_subvi.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
