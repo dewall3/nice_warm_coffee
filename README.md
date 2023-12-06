@@ -14,14 +14,14 @@ The main motivation behind this project is to provide a solution to a real-world
 
 ## Sensors and Actors
 
-![Side_view](https://github.com/dewall3/nice_warm_coffee/assets/62768921/72eaec23-cec3-4815-8b0a-d7e731bd2d8a)
+![Side_view_2](https://github.com/dewall3/nice_warm_coffee/assets/62768921/ea5bc7b4-5376-4cb5-984f-98e06d598e95)
 
 ### I2C IR Camera (Adafruit AMG8833 using Panasonic Grid-Eye 8x8 sensor) [S1]
 Used to measure the temperature of the coffee. 
 
 https://learn.adafruit.com/adafruit-amg8833-8x8-thermal-camera-sensor
 
-![Grid_Eye](https://github.com/dewall3/nice_warm_coffee/assets/62768921/89ec2d77-7c97-46b4-99cc-4bc00099e94e)
+![Grid_Eye_2](https://github.com/dewall3/nice_warm_coffee/assets/62768921/c396cef1-a285-4b92-99a1-066c81a9c91f)
 
 ### I2C PMOD TMP3 [S2 - inside hot plate enclosure]
 The TMP3 sensor is used to measure temperature within the hot plate to give an estimate of the danger level of touching the hot plate.
@@ -45,7 +45,7 @@ An RGB-LED is used as a visual indicator of the danger level of touching the hot
 Brand: EDGELEC
 Model: ‎ED_YW05_RGB-4P-C
 
-![Sensors_actors](https://github.com/dewall3/nice_warm_coffee/assets/62768921/32237451-41a9-4ac4-b344-bb3957b8455a)
+![Sensors_actors_2](https://github.com/dewall3/nice_warm_coffee/assets/62768921/632a1bd6-c6f7-4ad2-9855-f34762df169a)
 
 ## Wireless Communication
 
