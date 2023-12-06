@@ -24,7 +24,7 @@ https://learn.adafruit.com/adafruit-amg8833-8x8-thermal-camera-sensor
 ![Grid_Eye_2](https://github.com/dewall3/nice_warm_coffee/assets/62768921/c396cef1-a285-4b92-99a1-066c81a9c91f)
 
 ### I2C PMOD TMP3 [S2 - inside hot plate enclosure]
-The TMP3 sensor is used to measure temperature within the hot plate to give an estimate of the danger level of touching the hot plate.
+The TMP3 sensor is used to measure the temperature within the hot plate to give an estimate of the danger level of touching the hot plate.
 
 https://digilent.com/reference/pmod/pmodtmp3/reference-manual
 
@@ -52,7 +52,7 @@ Model: ‎ED_YW05_RGB-4P-C
 ### WiFi MyRio Setup
 The MyRio can be configured to connect over WiFi utilizing the NI MAX software. The MyRio must be configured in advance to connect to a specific network that the host computer will also be connected to. For simplicity, a custom hotspot SSID/password was made to enable the device to be started anywhere without reconfiguration.
 
-NOTE: To connect to the webservices detailed below, the MyRio date and time must be accurate. The date/time reset every time the device loses power. To combat this, a SubVI can be used to set the time of the MyRio to match the host computer. One such SubVI was available through NI: <a href="https://learn-cf.ni.com/teach/riodevguide/code/rt-pc_set-rt-system-time-date-from-pc.html">Set Date and Time on MYRIO</a>
+NOTE: To connect to the web services detailed below, the MyRio date and time must be accurate. The date/time reset every time the device loses power. To combat this, a SubVI can be used to set the time of the MyRio to match the host computer. One such SubVI was available through NI: <a href="https://learn-cf.ni.com/teach/riodevguide/code/rt-pc_set-rt-system-time-date-from-pc.html">Set Date and Time on MYRIO</a>
 
 ### SystemLink
 The "NI SystemLink Server" package can be downloaded from the NI Package Manager using the GaTech license. This package is required to run the VI and is what enables the LabView program and MyRio to communicate with the WebVI using tags: <a href="https://www.ni.com/docs/en-US/bundle/systemlink/page/communicating-data-with-tags.html">NI Documentation on Using Tags</a>
@@ -60,7 +60,12 @@ The "NI SystemLink Server" package can be downloaded from the NI Package Manager
 ![LabView_back](https://github.com/dewall3/nice_warm_coffee/assets/62768921/b946c5a7-832c-446d-9116-501d61e9e3c4)
 
 ### GWeb Services
-HTML development resource (available through GaTech's NI license) that provides the means for creating WebVIs, which have a similar front panel and back panel setup similar to LabView. The "front panel" can be hosted on a website, such as ours: <a href="https://hosting.systemlinkcloud.io/webapps/05c91db7-e59d-4886-8364-4b6e4c14867b/content/ni-paths-NISHAREDDIR64/Web%20Server/htdocs/WebApp/index.html">WebVI</a>
+HTML development resource (available through GaTech's NI license) that provides the means for creating WebVIs. 
+
+The "Panel" on GWeb Services operates in a very similar manner to a LabView front panel:
+![WebVI](https://github.com/dewall3/nice_warm_coffee/assets/62768921/1a76bd9a-6490-448a-832e-7bfd4ea98498)
+
+
 
 The "Diagram" on GWeb Services operates in a very similar manner to a LabView back panel:
 ![GWeb_back_panel](https://github.com/dewall3/nice_warm_coffee/assets/62768921/04bde37c-8479-4146-9bbf-c6c1945b048c)
@@ -72,11 +77,11 @@ The "Diagram" on GWeb Services operates in a very similar manner to a LabView ba
 
 ## Challenges and Lessons Learned
 
-One of the biggest challenges encountered was heat generation. When most of the budget goes to expensive sensors and a MyRio, sometimes corners have to be cut. In this case, the heat element was a very inexpensive 17W "Candle Warmer". This proved to be quite ineffective at warming up the coffee. It does a decent job at maintaining a temperature, but raising the temperature takes an absurd amount of time. In the demonstration video above, the temperature goes from approximately 95° F to 105° F. The video's speed is increased significantly. The original recording was over an hour long! Because of this, the warmer only does anything useful at 100% power, so one of the original "optional" goals in the requirements above had to be abandoned. There was simply no feasible way to create a smart feedback adjustment with this particular heat source.
+One of the biggest challenges encountered was heat generation. When most of the budget goes to expensive sensors and a MyRio, sometimes corners have to be cut. In this case, the heating element was a very inexpensive 17W "Candle Warmer". This proved to be quite ineffective at warming up the coffee. It does a decent job at maintaining a temperature, but raising the temperature takes an absurd amount of time. In the demonstration video above, the temperature goes from approximately 95° F to 105° F. The video's speed has been increased significantly. The original recording was over an hour long! Because of this, the warmer only does anything useful at 100% power, so one of the original "optional" goals in the requirements above had to be abandoned. There was simply no feasible way to create a smart feedback adjustment with this particular heat source.
 
 Another optional goal that had to be abandoned was the self-deployment of the MyRio. Combining deployment with the WiFi and WebVI interface ended up being a bit beyond the scope of our capabilities. 
 
-Finally, we noticed that the IR camera had temperature readings that sometimes seemed off. Since the sensor is measuring the surface temperature (at the interface between liquid and air), the direct measurement is likely not a good representation of mean liquid temperature. There was not time to address this, but a future upgrade could include a temperature correction of some kind determined by comparing IR surface temperature data to temperature data collected by a submerged sensor.
+Finally, we noticed that the IR camera had temperature readings that sometimes seemed off. Since the sensor is measuring the surface temperature (at the interface between liquid and air), the direct measurement is likely not a good representation of the mean liquid temperature. There was no time to address this, but a future upgrade could include a temperature correction of some kind determined by comparing IR surface temperature data to temperature data collected by a submerged sensor.
 
-Despite these minor setbacks, we feel that our device was able to perform admirably. The web-based control aspect also worked far better than we could have hoped. We learned how to successfully build and deploy an HTML package, transmit data back and forth in LabView through a webserver, and set up the MyRio for wireless operation. 
+Despite these minor setbacks, we feel that our device was able to perform admirably. The web-based control aspect also worked far better than we could have hoped. We learned how to successfully build and deploy an HTML package, transmit data back and forth in LabView through a web server, and set up the MyRio for wireless operation. 
 
