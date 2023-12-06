@@ -66,7 +66,7 @@ The "Diagram" on GWeb Services operates in a very similar manner to a LabView ba
 
 ## Demonstration
 
-<a href="https://gtvault-my.sharepoint.com/:v:/g/personal/dwallace36_gatech_edu/EbN4DnTYsqlCpFK7Ce8ax5EBOd8VOqywoSlm-DWYyA8vqQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=r7S1AI">Demonstration Video</a>
+{% include youtube.html id="ghzMjdlc4OU" %}
 
 ## Challenges and Lessons Learned
 
