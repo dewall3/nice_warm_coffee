@@ -6,6 +6,8 @@ The main motivation behind this project is to provide a solution to a real-world
 
 ## Requirements
 
+<img src="https://github.com/dewall3/nice_warm_coffee/assets/62768921/eb5764a0-cf84-4110-a8b5-f3e962a87931" width="48">
+
 ![Team17_Eng_spec](https://github.com/dewall3/nice_warm_coffee/assets/62768921/eb5764a0-cf84-4110-a8b5-f3e962a87931)
 
 ## State Machine Diagram
