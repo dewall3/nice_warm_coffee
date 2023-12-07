@@ -49,6 +49,9 @@ Model: ‎ED_YW05_RGB-4P-C
 
 ## Wireless Communication
 
+### LabView Code
+<a href="https://github.com/dewall3/nice_warm_coffee/tree/main/Coffee_Wifi">LabView Code Available in Repository
+
 ### WiFi MyRio Setup
 The MyRio can be configured to connect over WiFi utilizing the NI MAX software. The MyRio must be configured in advance to connect to a specific network that the host computer will also be connected to. For simplicity, a custom hotspot SSID/password was made to enable the device to be started anywhere without reconfiguration.
 
@@ -59,14 +62,11 @@ The "NI SystemLink Server" package can be downloaded from the NI Package Manager
 
 ![LabView_back](https://github.com/dewall3/nice_warm_coffee/assets/62768921/b946c5a7-832c-446d-9116-501d61e9e3c4)
 
-<a href="https://github.com/dewall3/nice_warm_coffee/tree/main/Coffee_Wifi">LabView Code available here
-
 ### GWeb Services
 HTML development resource (available through GaTech's NI license) that provides the means for creating WebVIs. 
 
 The "Panel" on GWeb Services operates in a very similar manner to a LabView front panel:
 ![WebVI](https://github.com/dewall3/nice_warm_coffee/assets/62768921/1a76bd9a-6490-448a-832e-7bfd4ea98498)
-
 
 
 The "Diagram" on GWeb Services operates in a very similar manner to a LabView back panel:
