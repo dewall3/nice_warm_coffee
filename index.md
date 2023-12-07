@@ -4,8 +4,6 @@ Coffee warmers have been around for quite some time. They are available at a rel
 
 The main motivation behind this project is to provide a solution to a real-world problem that many people face every day - cold coffee. Our device will maintain a set temperature, detect the presence of a coffee cup, and warn the user about how hot the surface is at varying levels. Every device these days is smart - so why not your coffee warmer? The Nice Warm Coffee device can be completely monitored and controlled from your smartphone! Why? Why not?
 
-<a href="https://github.com/dewall3/nice_warm_coffee">Code Available at Main GitHub Repository Page</a>
-
 ## Requirements
 
 ![Team17_Eng_spec](https://github.com/dewall3/nice_warm_coffee/assets/62768921/eb5764a0-cf84-4110-a8b5-f3e962a87931)
@@ -60,6 +58,8 @@ NOTE: To connect to the web services detailed below, the MyRio date and time mus
 The "NI SystemLink Server" package can be downloaded from the NI Package Manager using the GaTech license. This package is required to run the VI and is what enables the LabView program and MyRio to communicate with the WebVI using tags: <a href="https://www.ni.com/docs/en-US/bundle/systemlink/page/communicating-data-with-tags.html">NI Documentation on Using Tags</a>
 
 ![LabView_back](https://github.com/dewall3/nice_warm_coffee/assets/62768921/b946c5a7-832c-446d-9116-501d61e9e3c4)
+
+<a href="https://github.com/dewall3/nice_warm_coffee/tree/main/Coffee_Wifi">LabView Code available here
 
 ### GWeb Services
 HTML development resource (available through GaTech's NI license) that provides the means for creating WebVIs. 
