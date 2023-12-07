@@ -47,7 +47,7 @@ Model: ‎ED_YW05_RGB-4P-C
 
 ![Sensors_actors_2](https://github.com/dewall3/nice_warm_coffee/assets/62768921/632a1bd6-c6f7-4ad2-9855-f34762df169a)
 
-## Wireless Communication
+## Programming
 
 ### LabView Code
 <a href="https://github.com/dewall3/nice_warm_coffee/tree/main/Coffee_Wifi">LabView Code Available in Repository
